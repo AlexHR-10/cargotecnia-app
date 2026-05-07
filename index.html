@@ -23,7 +23,7 @@ header{background:var(--black);height:64px;padding:0 2rem;display:flex;align-ite
 .header-badge{font-size:11px;font-weight:500;color:#666;letter-spacing:.06em;text-transform:uppercase;}
 .header-sub{font-size:10px;color:#444;letter-spacing:.06em;text-transform:uppercase;margin-top:2px;}
 
-main{max-width:840px;margin:0 auto;padding:2rem 1.5rem 4rem;}
+main{max-width:840px;margin:0 auto;padding:1rem 1.5rem 3rem;}
 .screen{display:none;animation:fadeIn .3s ease;}
 .screen.active{display:block;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
@@ -31,25 +31,25 @@ main{max-width:840px;margin:0 auto;padding:2rem 1.5rem 4rem;}
 /* HOME */
 .home-hero{padding:3rem 0 2rem;}
 .eyebrow{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem;}
-.home-title{font-family:'Barlow Condensed',sans-serif;font-size:52px;font-weight:700;line-height:1.05;margin-bottom:1rem;}
-.home-desc{font-size:15px;font-weight:300;color:var(--gray-600);line-height:1.65;max-width:460px;}
+.home-title{font-family:'Barlow Condensed',sans-serif;font-size:44px;font-weight:700;line-height:1.05;margin-bottom:0.6rem;}
+.home-desc{font-size:14px;font-weight:300;color:var(--gray-600);line-height:1.5;max-width:460px;margin-bottom:0;}
 
-.form-card{background:#fff;border:1px solid var(--gray-200);border-radius:4px;padding:2rem;margin-top:2rem;}
-.form-label-row{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);margin-bottom:1.5rem;padding-bottom:.75rem;border-bottom:1px solid var(--gray-200);}
-.form-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;margin-bottom:2rem;}
+.form-card{background:#fff;border:1px solid var(--gray-200);border-radius:4px;padding:1.25rem 1.5rem;margin-top:1.25rem;}
+.form-label-row{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-400);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray-200);}
+.form-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;margin-bottom:1.25rem;}
 .form-group label{display:block;font-size:13px;font-weight:500;color:var(--gray-600);margin-bottom:.5rem;}
 .input-wrap{position:relative;}
-.input-num{width:100%;height:56px;padding:0 50px 0 16px;font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:700;color:var(--black);background:var(--gray-100);border:1.5px solid var(--gray-200);border-radius:2px;outline:none;transition:border-color .15s;-moz-appearance:textfield;}
+.input-num{width:100%;height:48px;padding:0 50px 0 16px;font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:700;color:var(--black);background:var(--gray-100);border:1.5px solid var(--gray-200);border-radius:2px;outline:none;transition:border-color .15s;-moz-appearance:textfield;}
 .input-num::-webkit-outer-spin-button,.input-num::-webkit-inner-spin-button{-webkit-appearance:none;}
 .input-num:focus{border-color:var(--red);background:#fff;}
-.input-txt{width:100%;height:52px;padding:0 16px;font-size:15px;color:var(--black);background:var(--gray-100);border:1.5px solid var(--gray-200);border-radius:2px;outline:none;transition:border-color .15s;}
+.input-txt{width:100%;height:48px;padding:0 16px;font-size:15px;color:var(--black);background:var(--gray-100);border:1.5px solid var(--gray-200);border-radius:2px;outline:none;transition:border-color .15s;}
 .input-txt:focus{border-color:var(--red);background:#fff;}
 .input-unit{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:13px;font-weight:600;color:var(--gray-400);pointer-events:none;}
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px;}
 .chip{font-size:12px;font-weight:500;color:var(--gray-600);background:var(--gray-100);border:1px solid var(--gray-200);border-radius:2px;padding:3px 10px;cursor:pointer;transition:all .15s;}
 .chip:hover{border-color:var(--red);color:var(--red);}
 
-.btn-primary{width:100%;height:54px;background:var(--red);color:#fff;border:none;border-radius:2px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .15s;}
+.btn-primary{width:100%;height:48px;background:var(--red);color:#fff;border:none;border-radius:2px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .15s;}
 .btn-primary:hover{background:var(--red-light);}
 .btn-secondary{height:38px;padding:0 16px;background:transparent;color:var(--gray-600);border:1px solid var(--gray-200);border-radius:2px;font-size:13px;font-weight:500;cursor:pointer;display:inline-flex;align-items:center;gap:7px;transition:all .15s;white-space:nowrap;}
 .btn-secondary:hover{border-color:var(--red);color:var(--red);}
@@ -131,6 +131,30 @@ main{max-width:840px;margin:0 auto;padding:2rem 1.5rem 4rem;}
   .results-top{flex-direction:column;}
   .results-top-right{align-items:flex-start;}
 }
+
+/* LIGHTBOX */
+#lightbox{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);z-index:9998;display:none;align-items:center;justify-content:center;padding:1rem;}
+#lightbox.active{display:flex;}
+#lightbox-img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:3px;user-select:none;}
+#lightbox-close{position:fixed;top:16px;right:20px;color:#fff;font-size:32px;cursor:pointer;line-height:1;z-index:9999;opacity:.8;transition:opacity .15s;}
+#lightbox-close:hover{opacity:1;}
+#lightbox-prev,#lightbox-next{position:fixed;top:50%;transform:translateY(-50%);color:#fff;font-size:42px;cursor:pointer;z-index:9999;padding:0 18px;opacity:.7;transition:opacity .15s;user-select:none;}
+#lightbox-prev:hover,#lightbox-next:hover{opacity:1;}
+#lightbox-prev{left:0;}
+#lightbox-next{right:0;}
+#lightbox-counter{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);color:#aaa;font-size:13px;font-weight:500;letter-spacing:.05em;}
+#lightbox-caption{position:fixed;bottom:44px;left:50%;transform:translateX(-50%);color:#ddd;font-size:13px;font-weight:500;letter-spacing:.03em;white-space:nowrap;}
+.photo-item img{cursor:zoom-in;}
+.chart-wrap img{cursor:zoom-in;}
+
+/* TRUCK SECTION */
+.truck-section{margin-bottom:1.25rem;}
+.truck-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:.6rem;}
+.truck-cell{background:var(--gray-100);border-radius:2px;padding:.7rem .875rem;}
+.truck-cell-label{font-size:11px;font-weight:500;color:var(--gray-400);text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px;}
+.truck-cell-val{font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;color:var(--black);line-height:1.2;}
+.truck-cell-sub{font-size:11px;color:var(--gray-600);margin-top:1px;}
+.truck-estab{display:inline-flex;align-items:center;gap:6px;margin-top:.6rem;background:#FFF8E1;border:1px solid #F59E0B;border-radius:2px;padding:5px 10px;font-size:12px;font-weight:600;color:#92400E;}
 </style>
 </head>
 <body>
@@ -183,22 +207,35 @@ main{max-width:840px;margin:0 auto;padding:2rem 1.5rem 4rem;}
 </div>
 
 
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="lbClose(event)">
+  <span id="lightbox-close" onclick="closeLightbox()">&#10005;</span>
+  <span id="lightbox-prev" onclick="lbNav(-1)">&#8249;</span>
+  <img id="lightbox-img" src="" alt="">
+  <span id="lightbox-next" onclick="lbNav(1)">&#8250;</span>
+  <div id="lightbox-caption"></div>
+  <div id="lightbox-counter"></div>
+</div>
+
 <header>
-  <img src="https://www.cargotecnia.com/wp-content/uploads/2023/06/Logo-Cargotecnia-1024x316.png"
-       alt="Cargotecnia" class="logo-img"
-       onerror="this.style.display='none';document.getElementById('logoFallback').style.display='block'">
-  <span id="logoFallback" style="display:none;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:700;letter-spacing:.05em;">CARGOTECNIA</span>
-  <div class="header-right">
-    <div class="header-badge">Selector de Grúas HIAB</div>
-    <div class="header-sub">Distribuidores Autorizados HIAB</div>
+  <div style="display:flex;align-items:center;gap:16px;">
+    <img src="https://www.cargotecnia.com/wp-content/uploads/2023/06/Logo-Cargotecnia-1024x316.png"
+         alt="Cargotecnia"
+         style="height:36px;width:auto;filter:brightness(0) invert(1);"
+         onerror="this.style.display='none';document.getElementById('logoFallback').style.display='block'">
+    <span id="logoFallback" style="display:none;color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:700;letter-spacing:.05em;">CARGOTECNIA</span>
+  </div>
+  <div style="text-align:right;">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;color:#ffffff;letter-spacing:.08em;text-transform:uppercase;">Selector de Grúas HIAB</div>
+    <div style="font-size:11px;font-weight:600;color:#999;letter-spacing:.08em;text-transform:uppercase;margin-top:2px;">Distribuidores Autorizados</div>
   </div>
 </header>
 
 <main>
 
 <div id="screenHome" class="screen active">
-  <div class="home-hero">
-    <div class="eyebrow">Cargotecnia · Herramienta técnica</div>
+  <div class="home-hero" style="padding:1.5rem 0 1rem;">
     <h1 class="home-title">¿Qué grúa<br>necesitas?</h1>
     <p class="home-desc">Ingresa el peso y la distancia de tu operación. En segundos encontramos el modelo ideal con disponibilidad en inventario nacional.</p>
   </div>
@@ -256,7 +293,7 @@ main{max-width:840px;margin:0 auto;padding:2rem 1.5rem 4rem;}
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
           Nueva consulta
         </button>
-        <div class="inv-badge"><span class="inv-dot"></span>Inventario Semana 18 · 27 Abr 2026</div>
+        <div class="inv-badge"><span class="inv-dot"></span>Inventario Semana 19 · 4 May 2026</div>
       </div>
     </div>
   </div>
@@ -293,101 +330,190 @@ function getCharts() {
 }
 
 function getPhotos(modelId) {
-  return fetch(SCRIPT + "?type=photos&model=" + encodeURIComponent(modelId))
-    .then(function(r){ return r.json(); })
-    .then(function(d){
-      return (d.photos || []).map(function(u){ return toThumb(u, "w800"); });
-    })
-    .catch(function(){ return []; });
+  // Para el modelo JIB, intentar primero con ID exacto, luego con fallback
+  var attempts = [modelId];
+  if (modelId === "iQ-1188-HiPro-E9-JIB") {
+    attempts = ["iQ-1188-HiPro-E9-JIB", "iQ-1188-HiPro-E9 JIB", "iQ-1188 HiPro E-9 JIB", "iQ-1188-HiPro-E9"];
+  }
+  
+  function tryNext(list) {
+    if (!list.length) return Promise.resolve([]);
+    var id = list[0];
+    return fetch(SCRIPT + "?type=photos&model=" + encodeURIComponent(id))
+      .then(function(r){ return r.json(); })
+      .then(function(d){
+        var photos = (d.photos || []).map(function(u){ return toThumb(u, "w800"); });
+        if (photos.length > 0) return photos;
+        return tryNext(list.slice(1));
+      })
+      .catch(function(){ return tryNext(list.slice(1)); });
+  }
+  return tryNext(attempts);
 }
 
 // ── BASE DE DATOS ──────────────────────────────────────────────
 var CRANES = [
-  {id:"X-CLX-044-D3",  name:"HIAB X-CLX 044 D-3",       chart:[{r:3,c:990},{r:5,c:740},{r:7,c:560},{r:9,c:440}],                                                                           maxReach:9,  maxCap:990},
-  {id:"X-CLX-044-D4",  name:"HIAB X-CLX 044 D-4 CEN",    chart:[{r:2,c:1360},{r:3,c:980},{r:5,c:680},{r:7,c:500},{r:8,c:390},{r:9,c:330}],                                                 maxReach:9,  maxCap:1360},
-  {id:"X-CLX-058-D3",  name:"HIAB X-CLX 058 D-3",         chart:[{r:2,c:1580},{r:4,c:1160},{r:6,c:800},{r:8,c:580},{r:10,c:450}],                                                           maxReach:10, maxCap:1580},
-  {id:"X-CL8-B3",      name:"HIAB X-CL 8 B-3",            chart:[{r:3,c:1860},{r:5,c:1260},{r:7,c:940},{r:9,c:760}],                                                                         maxReach:9,  maxCap:1860},
-  {id:"X-CLX-088-E5",  name:"HIAB X-CLX 088 E-5",         chart:[{r:2,c:2640},{r:4,c:1600},{r:6,c:1080},{r:8,c:740},{r:10,c:560},{r:12,c:440},{r:14,c:370}],                               maxReach:14, maxCap:2640},
-  {id:"X-CL12-B3",     name:"HIAB X-CL 12 B-3",           chart:[{r:2,c:3350},{r:4,c:2380},{r:6,c:1680},{r:8,c:1240},{r:10,c:1000}],                                                       maxReach:10, maxCap:3350},
-  {id:"X-CLX-148-D2",  name:"HIAB X-CLX 148 D-2",         chart:[{r:2,c:4600},{r:4,c:3100},{r:6,c:2200},{r:8,c:1660}],                                                                     maxReach:8,  maxCap:4600},
-  {id:"X-CLX-148-D3",  name:"HIAB X-CLX 148 D-3",         chart:[{r:2,c:3900},{r:4,c:2750},{r:6,c:1940},{r:8,c:1480},{r:10,c:1180}],                                                       maxReach:10, maxCap:3900},
-  {id:"X-CLX-148-E2",  name:"HIAB X-CLX 148 E-2",         chart:[{r:2,c:5500},{r:4,c:3000},{r:6,c:2100},{r:8,c:1600}],                                                                     maxReach:8,  maxCap:5500},
-  {id:"X-CLX-148-E3",  name:"HIAB X-CLX 148 E-3",         chart:[{r:2,c:5300},{r:4,c:2800},{r:6,c:1960},{r:8,c:1480},{r:10,c:1160}],                                                       maxReach:10, maxCap:5300},
-  {id:"X-CLX-148-E5",  name:"HIAB X-CLX 148 E-5",         chart:[{r:2,c:4700},{r:4,c:2500},{r:6,c:1720},{r:8,c:1240},{r:10,c:940},{r:12,c:740},{r:14,c:620}],                             maxReach:14, maxCap:4700},
-  {id:"iX-158-HIDUO-E5",name:"HIAB iX 158 HiDuo E-5",     chart:[{r:1.5,c:6622},{r:3,c:4263},{r:5,c:2767},{r:7,c:1882},{r:9,c:1383},{r:11,c:1043},{r:13,c:852},{r:15,c:716},{r:18,c:417}],maxReach:18,maxCap:6622},
-  {id:"X-CL16-B3",     name:"HIAB X-CL 16 B-3",           chart:[{r:2,c:4500},{r:4,c:3050},{r:6,c:2150},{r:8,c:1600},{r:10,c:1300}],                                                       maxReach:10, maxCap:4500},
-  {id:"X-CLX-178-E2",  name:"HIAB X-CLX 178 E-2",         chart:[{r:2,c:5200},{r:4,c:3450},{r:6,c:2460},{r:8,c:1860}],                                                                     maxReach:8,  maxCap:5200},
-  {id:"X-CLX-178-E3",  name:"HIAB X-CLX 178 E-3",         chart:[{r:2,c:4900},{r:4,c:3250},{r:6,c:2280},{r:8,c:1700},{r:10,c:1360}],                                                       maxReach:10, maxCap:4900},
-  {id:"IX-HIDUO-188-E3",name:"HIAB IX-HiDuo 188 E-3",      chart:[{r:2,c:5200},{r:4,c:3450},{r:6,c:2440},{r:8,c:1820},{r:10,c:1460}],                                                       maxReach:10, maxCap:5200},
-  {id:"X-CL19-B3",     name:"HIAB X-CL 19 B-3",           chart:[{r:2,c:4900},{r:4,c:3600},{r:6,c:2500},{r:8,c:1860},{r:10,c:1500}],                                                       maxReach:10, maxCap:4900},
-  {id:"X-CLX-218-E3",  name:"HIAB X-CLX 218 E-3",         chart:[{r:2,c:5200},{r:4,c:3900},{r:6,c:2750},{r:8,c:2060},{r:10,c:1660}],                                                       maxReach:10, maxCap:5200},
-  {id:"X-CL23-B3",     name:"HIAB X-CL 23 B-3",           chart:[{r:2,c:5700},{r:4,c:4150},{r:6,c:3000},{r:8,c:2240},{r:10,c:1800}],                                                       maxReach:10, maxCap:5700},
-  {id:"X-CL23-B4",     name:"HIAB X-CL 23 B-4",           chart:[{r:2,c:5200},{r:4,c:4050},{r:6,c:2850},{r:8,c:2120},{r:10,c:1640},{r:12,c:1360}],                                         maxReach:12, maxCap:5200},
-  {id:"X-CLX-248-EP3", name:"HIAB X-CLX 248 EP-3",         chart:[{r:2,c:4950},{r:4,c:3450},{r:6,c:2540},{r:8,c:1980}],                                                                     maxReach:8,  maxCap:4950},
-  {id:"X-CLX-248-EP4", name:"HIAB X-CLX 248 EP-4",         chart:[{r:2,c:4700},{r:4,c:3250},{r:6,c:2380},{r:8,c:1820},{r:10,c:1460}],                                                       maxReach:10, maxCap:4700},
-  {id:"X-CLX-288-EP3", name:"HIAB X-CLX 288 EP-3",         chart:[{r:2,c:5700},{r:4,c:4050},{r:6,c:2980},{r:8,c:2340}],                                                                     maxReach:8,  maxCap:5700},
-  {id:"X-CLX-288-EP4", name:"HIAB X-CLX 288 EP-4",         chart:[{r:2,c:5500},{r:4,c:3850},{r:6,c:2800},{r:8,c:2160},{r:10,c:1760}],                                                       maxReach:10, maxCap:5500},
-  {id:"X-CLX-288-EP5", name:"HIAB X-CLX 288 EP-5",         chart:[{r:2,c:9200},{r:4,c:5300},{r:6,c:3650},{r:8,c:2660},{r:10,c:2020},{r:12,c:1620},{r:16,c:1360}],                         maxReach:16, maxCap:9200},
-  {id:"eX-302-HIPRO-EP4",name:"HIAB eX 302 HiPro EP-4",   chart:[{r:2,c:6000},{r:4,c:4200},{r:6,c:3100},{r:8,c:2380},{r:10,c:1940}],                                                       maxReach:10, maxCap:6000},
-  {id:"X-CLX-388-EP4", name:"HIAB X-CLX 388 EP-4",         chart:[{r:2,c:7700},{r:4,c:5400},{r:6,c:3950},{r:8,c:3050},{r:10,c:2460}],                                                       maxReach:13, maxCap:10000},
-  {id:"X-CLX-388-EP5", name:"HIAB X-CLX 388 EP-5",         chart:[{r:2,c:7400},{r:4,c:5200},{r:6,c:3750},{r:8,c:2850},{r:10,c:2280},{r:14,c:1920}],                                         maxReach:16, maxCap:10000},
-  {id:"EFFER-395-5S",  name:"EFFER 395 5S",                chart:[{r:2.88,c:11400},{r:4.64,c:7360},{r:6.53,c:5050},{r:8.42,c:3790},{r:10.43,c:2980},{r:12.44,c:2440},{r:14.59,c:2070},{r:16.82,c:1670}],maxReach:17,maxCap:11400},
-  {id:"X-CLX-398-EP4", name:"HIAB X-CLX 398 EP-4",         chart:[{r:2,c:8000},{r:4,c:5600},{r:6,c:4100},{r:8,c:3150},{r:10,c:2550}],                                                       maxReach:13, maxCap:10000},
-  {id:"X-CLX-398-EP5", name:"HIAB X-CLX 398 EP-5",         chart:[{r:2,c:7700},{r:4,c:5400},{r:6,c:3900},{r:8,c:3000},{r:10,c:2380},{r:14,c:2000}],                                         maxReach:16, maxCap:10000},
-  {id:"X-HIPRO-418-EP4",name:"HIAB X-HiPro 418 EP-4",      chart:[{r:2,c:8000},{r:4,c:5700},{r:6,c:4150},{r:8,c:3200},{r:10,c:2600}],                                                       maxReach:14, maxCap:10000},
-  {id:"X-HIPRO-418-EP5",name:"HIAB X-HiPro 418 EP-5",      chart:[{r:2,c:7700},{r:4,c:5400},{r:6,c:3950},{r:8,c:3000},{r:10,c:2420},{r:14,c:2040}],                                         maxReach:16, maxCap:12000},
-  {id:"X-HIPRO-558-EP6",name:"HIAB X-HiPro 558 EP-6",      chart:[{r:2,c:9900},{r:4,c:6800},{r:6,c:5100},{r:8,c:3950},{r:10,c:3200},{r:12,c:2700},{r:16,c:2340}],                         maxReach:17, maxCap:9900},
-  {id:"X-HIPRO-638-E8", name:"HIAB X-HiPro 638 E-8",       chart:[{r:2,c:9600},{r:4,c:7000},{r:6,c:5200},{r:8,c:4000},{r:10,c:3250},{r:12,c:2640},{r:14,c:2240},{r:18,c:1920},{r:21,c:1720}],maxReach:21,maxCap:9600},
-  {id:"X-HIPRO-638-E9", name:"HIAB X-HiPro 638 E-9",       chart:[{r:2,c:9300},{r:4,c:6700},{r:6,c:4950},{r:8,c:3800},{r:10,c:3050},{r:12,c:2460},{r:14,c:2040},{r:18,c:1740},{r:22,c:1380}],maxReach:22,maxCap:9300},
-  {id:"X-HIPRO-658-EP6",name:"HIAB X-HiPro 658 EP-6",      chart:[{r:2,c:10000},{r:4,c:7400},{r:6,c:5500},{r:8,c:4300},{r:10,c:3500},{r:12,c:2980},{r:16,c:2560}],                         maxReach:18, maxCap:10000},
-  {id:"X-HIPRO-858-E8", name:"HIAB X-HiPro 858 E-8",       chart:[{r:2,c:16700},{r:4,c:14300},{r:6,c:10400},{r:8,c:7700},{r:10,c:6100},{r:12,c:4850},{r:14,c:3950},{r:16,c:3400},{r:18,c:2920},{r:20,c:2600}],maxReach:20,maxCap:16700},
-  {id:"X-HIPRO-1058-E8",name:"HIAB X-HiPro 1058 E-8",      chart:[{r:2,c:16700},{r:4,c:12000},{r:6,c:9000},{r:8,c:7100},{r:10,c:5700},{r:12,c:4700},{r:14,c:4000},{r:16,c:3450},{r:18,c:3100}],maxReach:20,maxCap:16700},
-  {id:"iQ-1188-HiPro-E9",name:"HIAB iQ-1188 HiPro E-9",   chart:[{r:2,c:18200},{r:4,c:13400},{r:6,c:10100},{r:8,c:8000},{r:10,c:6600},{r:12,c:5500},{r:14,c:4600},{r:16,c:3950},{r:18,c:3450},{r:22,c:3100}],maxReach:22,maxCap:18200},
-  {id:"iQ-1388-HiPro-E9",name:"HIAB iQ.1388 HiPro E-9",   chart:[{r:4,c:18200},{r:6,c:13400},{r:8,c:10100},{r:10,c:8000},{r:12,c:6600},{r:14,c:5500},{r:16,c:4600},{r:20,c:3950},{r:22,c:3100}],maxReach:38,maxCap:30000}
+  {id:"X-CLX-044-D3",name:"HIAB X-CLX 044 D-3",chart:[{r:3.5,c:1040},{r:4.8,c:740},{r:6.2,c:560},{r:7.7,c:440}],maxReach:7.7,maxCap:1040},
+  {id:"X-CLX-044-D4",name:"HIAB X-CLX 044 D-4 CEN",chart:[{r:3.5,c:980},{r:4.8,c:680},{r:6.2,c:500},{r:7.7,c:390},{r:9.1,c:330}],maxReach:9.1,maxCap:980},
+  {id:"X-CLX-058-D3",name:"HIAB X-CLX 058 D-3",chart:[{r:4.0,c:1160},{r:5.5,c:800},{r:7.5,c:580},{r:9.2,c:450}],maxReach:9.2,maxCap:1160},
+  {id:"X-CL8-B3",name:"HIAB X-CL 8 B-3",chart:[{r:3.9,c:1860},{r:5.5,c:1260},{r:7.2,c:940},{r:8.9,c:760}],maxReach:8.9,maxCap:1860},
+  {id:"X-CLX-088-E5",name:"HIAB X-CLX 088 E-5",chart:[{r:4.3,c:1600},{r:5.9,c:1080},{r:7.8,c:740},{r:9.7,c:560},{r:11.8,c:440},{r:13.6,c:370}],maxReach:13.6,maxCap:1600},
+  {id:"X-CL12-B3",name:"HIAB X-CL 12 B-3",chart:[{r:3.1,c:3350},{r:4.3,c:2380},{r:5.9,c:1680},{r:7.7,c:1240},{r:9.4,c:1000}],maxReach:9.4,maxCap:3350},
+  {id:"X-CLX-148-D2",name:"HIAB X-CLX 148 D-2",chart:[{r:3.0,c:4600},{r:4.3,c:3100},{r:6.1,c:2200},{r:8.0,c:1660}],maxReach:8.0,maxCap:4600},
+  {id:"X-CLX-148-D3",name:"HIAB X-CLX 148 D-3",chart:[{r:3.4,c:3900},{r:4.8,c:2750},{r:6.6,c:1940},{r:8.5,c:1480},{r:10.5,c:1180}],maxReach:10.5,maxCap:3900},
+  {id:"X-CLX-148-E2",name:"HIAB X-CLX 148 E-2",chart:[{r:2.1,c:5500},{r:4.5,c:3000},{r:6.3,c:2100},{r:8.2,c:1600}],maxReach:8.2,maxCap:5500},
+  {id:"X-CLX-148-E3",name:"HIAB X-CLX 148 E-3",chart:[{r:2.4,c:5300},{r:4.6,c:2800},{r:6.4,c:1960},{r:8.3,c:1480},{r:10.4,c:1160}],maxReach:10.4,maxCap:5300},
+  {id:"X-CLX-148-E5",name:"HIAB X-CLX 148 E-5",chart:[{r:2.6,c:4700},{r:4.7,c:2500},{r:6.5,c:1720},{r:8.4,c:1240},{r:10.5,c:940},{r:12.8,c:740},{r:15.0,c:620}],maxReach:15.0,maxCap:4700},
+  {id:"iX-158-HIDUO-E5",name:"HIAB iX 158 HiDuo E-5",chart:[{r:3.2,c:4250},{r:4.9,c:2750},{r:6.7,c:1880},{r:8.6,c:1380},{r:10.7,c:1060},{r:12.8,c:850},{r:15.0,c:710}],maxReach:15.0,maxCap:4250},
+  {id:"X-CL16-B3",name:"HIAB X-CL 16 B-3",chart:[{r:3.1,c:4500},{r:4.5,c:3050},{r:6.3,c:2150},{r:8.2,c:1600},{r:10.1,c:1300}],maxReach:10.1,maxCap:4500},
+  {id:"X-CLX-178-E2",name:"HIAB X-CLX 178 E-2",chart:[{r:3.2,c:5200},{r:4.6,c:3450},{r:6.4,c:2460},{r:8.4,c:1860}],maxReach:8.4,maxCap:5200},
+  {id:"X-CLX-178-E3",name:"HIAB X-CLX 178 E-3",chart:[{r:3.2,c:4900},{r:4.8,c:3250},{r:6.6,c:2280},{r:8.6,c:1700},{r:10.6,c:1360}],maxReach:10.6,maxCap:4900},
+  {id:"IX-HIDUO-188-E3",name:"HIAB IX-HiDuo 188 E-3",chart:[{r:3.2,c:5200},{r:4.8,c:3450},{r:6.6,c:2440},{r:8.6,c:1820},{r:10.6,c:1460}],maxReach:10.6,maxCap:5200},
+  {id:"X-CL19-B3",name:"HIAB X-CL 19 B-3",chart:[{r:3.4,c:4900},{r:4.6,c:3600},{r:6.4,c:2500},{r:8.4,c:1860},{r:10.4,c:1500}],maxReach:10.4,maxCap:4900},
+  {id:"X-CLX-218-E3",name:"HIAB X-CLX 218 E-3",chart:[{r:3.5,c:5200},{r:4.7,c:3900},{r:6.5,c:2750},{r:8.5,c:2060},{r:10.5,c:1660}],maxReach:10.5,maxCap:5200},
+  {id:"X-CL23-B3",name:"HIAB X-CL 23 B-3",chart:[{r:3.5,c:5700},{r:4.7,c:4150},{r:6.4,c:3000},{r:8.4,c:2240},{r:10.4,c:1800}],maxReach:10.4,maxCap:5700},
+  {id:"X-CL23-B4",name:"HIAB X-CL 23 B-4",chart:[{r:3.6,c:5200},{r:4.8,c:4050},{r:6.5,c:2850},{r:8.5,c:2120},{r:10.5,c:1640},{r:12.5,c:1360}],maxReach:12.5,maxCap:5200},
+  {id:"X-CLX-248-EP3",name:"HIAB X-CLX 248 EP-3",chart:[{r:4.3,c:4950},{r:6.0,c:3450},{r:8.0,c:2540},{r:10.2,c:1980}],maxReach:10.2,maxCap:4950},
+  {id:"X-CLX-248-EP4",name:"HIAB X-CLX 248 EP-4",chart:[{r:4.4,c:4700},{r:6.1,c:3250},{r:8.1,c:2380},{r:10.3,c:1820},{r:12.6,c:1460}],maxReach:12.6,maxCap:4700},
+  {id:"X-CLX-288-EP3",name:"HIAB X-CLX 288 EP-3",chart:[{r:4.3,c:5700},{r:6.0,c:4050},{r:8.0,c:2980},{r:10.2,c:2340}],maxReach:10.2,maxCap:5700},
+  {id:"X-CLX-288-EP4",name:"HIAB X-CLX 288 EP-4",chart:[{r:4.4,c:5500},{r:6.1,c:3850},{r:8.1,c:2800},{r:10.3,c:2160},{r:12.6,c:1760}],maxReach:12.6,maxCap:5500},
+  {id:"X-CLX-288-EP5",name:"HIAB X-CLX 288 EP-5",chart:[{r:4.5,c:5300},{r:6.2,c:3650},{r:8.2,c:2660},{r:10.4,c:2020},{r:12.7,c:1620},{r:15.0,c:1360}],maxReach:15.0,maxCap:5300},
+  {id:"eX-302-HIPRO-EP4",name:"HIAB eX 302 HiPro EP-4",chart:[{r:4.5,c:6000},{r:6.1,c:4200},{r:8.1,c:3100},{r:10.3,c:2380},{r:12.6,c:1940}],maxReach:12.6,maxCap:6000},
+  {id:"X-CLX-388-EP4",name:"HIAB X-CLX 388 EP-4",chart:[{r:3.2,c:10000},{r:4.5,c:7700},{r:6.1,c:5400},{r:8.1,c:3950},{r:10.3,c:3050},{r:12.6,c:2460}],maxReach:12.6,maxCap:10000},
+  {id:"X-CLX-388-EP5",name:"HIAB X-CLX 388 EP-5",chart:[{r:3.1,c:10000},{r:4.5,c:7400},{r:6.2,c:5200},{r:8.2,c:3750},{r:10.4,c:2850},{r:12.7,c:2280},{r:15.1,c:1920}],maxReach:15.1,maxCap:10000},
+  {id:"EFFER-395-5S",name:"EFFER 395 5S",chart:[{r:2.88,c:11400},{r:4.64,c:7360},{r:6.53,c:5050},{r:8.42,c:3790},{r:10.43,c:2980},{r:12.44,c:2440},{r:14.59,c:2070}],maxReach:14.59,maxCap:11400},
+  {id:"X-CLX-398-EP4",name:"HIAB X-CLX 398 EP-4",chart:[{r:3.3,c:10000},{r:4.4,c:8000},{r:6.1,c:5600},{r:8.1,c:4100},{r:10.3,c:3150},{r:12.6,c:2550}],maxReach:12.6,maxCap:10000},
+  {id:"X-CLX-398-EP5",name:"HIAB X-CLX 398 EP-5",chart:[{r:3.2,c:10000},{r:4.5,c:7700},{r:6.2,c:5400},{r:8.2,c:3900},{r:10.4,c:3000},{r:12.7,c:2380},{r:15.0,c:2000}],maxReach:15.0,maxCap:10000},
+  {id:"X-HIPRO-418-EP4",name:"HIAB X-HiPro 418 EP-4",chart:[{r:3.7,c:10000},{r:4.4,c:8700},{r:6.1,c:6100},{r:8.1,c:4500},{r:10.3,c:3500},{r:12.6,c:2850}],maxReach:12.6,maxCap:10000},
+  {id:"X-HIPRO-418-EP5",name:"HIAB X-HiPro 418 EP-5",chart:[{r:3.1,c:12000},{r:4.5,c:8400},{r:6.2,c:5900},{r:8.2,c:4300},{r:10.4,c:3300},{r:12.7,c:2650},{r:15.0,c:2220}],maxReach:15.0,maxCap:12000},
+  {id:"X-HIPRO-558-EP6",name:"HIAB X-HiPro 558 EP-6",chart:[{r:4.6,c:10700},{r:6.5,c:7400},{r:8.3,c:5500},{r:10.3,c:4300},{r:12.3,c:3550},{r:14.5,c:3000},{r:16.5,c:2550}],maxReach:16.5,maxCap:10700},
+  {id:"X-HIPRO-638-E8",name:"HIAB X-HiPro 638 E-8",chart:[{r:5.0,c:10400},{r:6.5,c:7700},{r:8.2,c:5700},{r:10.1,c:4450},{r:11.9,c:3600},{r:13.8,c:2960},{r:15.9,c:2500},{r:18.0,c:2160},{r:20.0,c:1940}],maxReach:20.0,maxCap:10400},
+  {id:"X-HIPRO-638-E9",name:"HIAB X-HiPro 638 E-9",chart:[{r:5.1,c:10100},{r:6.6,c:7300},{r:8.3,c:5500},{r:10.2,c:4250},{r:12.0,c:3400},{r:13.9,c:2780},{r:16.0,c:2300},{r:18.1,c:1980},{r:20.1,c:1740},{r:22.3,c:1580}],maxReach:22.3,maxCap:10100},
+  {id:"X-HIPRO-658-EP6",name:"HIAB X-HiPro 658 EP-6",chart:[{r:5.0,c:10900},{r:6.6,c:8000},{r:8.5,c:6000},{r:10.5,c:4750},{r:12.7,c:3850},{r:14.8,c:3250},{r:16.8,c:2820}],maxReach:16.8,maxCap:10900},
+  {id:"X-HIPRO-858-E8",name:"HIAB X-HiPro 858 E-8",chart:[{r:3.8,c:18000},{r:4.6,c:15500},{r:6.0,c:11300},{r:7.9,c:8500},{r:9.5,c:6700},{r:11.5,c:5300},{r:13.3,c:4400},{r:15.1,c:3750},{r:17.2,c:3250},{r:19.3,c:2900}],maxReach:19.3,maxCap:18000},
+  {id:"X-HIPRO-1058-E8",name:"HIAB X-HiPro 1058 E-8",chart:[{r:4.4,c:18000},{r:6.1,c:13000},{r:7.8,c:9800},{r:9.5,c:7800},{r:11.4,c:6200},{r:13.4,c:5200},{r:15.3,c:4450},{r:17.4,c:3850},{r:19.4,c:3450}],maxReach:19.4,maxCap:18000},
+  {id:"iQ-1188-HiPro-E9",name:"HIAB iQ-1188 HiPro E-9",chart:[{r:4.6,c:18200},{r:6.4,c:13400},{r:7.8,c:10100},{r:9.6,c:8000},{r:11.3,c:6600},{r:13.0,c:5500},{r:15.0,c:4600},{r:17.3,c:3950},{r:19.6,c:3450},{r:21.9,c:3100}],maxReach:21.9,maxCap:18200},
+  {id:"iQ-1188-HiPro-E9-JIB",name:"HIAB iQ-1188 HiPro E-9 + JIB",chart:[{r:4.6,c:18200},{r:6.4,c:13400},{r:7.8,c:10100},{r:9.6,c:8000},{r:11.3,c:6600},{r:13.0,c:5500},{r:15.0,c:4600},{r:17.3,c:3950},{r:19.6,c:3450},{r:21.9,c:3100},{r:24.0,c:1840},{r:25.5,c:1700},{r:27.2,c:1580},{r:29.0,c:1460},{r:30.5,c:1340},{r:32.0,c:1080},{r:33.5,c:920}],maxReach:33.5,maxCap:18200},
+  {id:"iQ-1388-HiPro-E9",name:"HIAB iQ.1388 HiPro E-9",chart:[{r:3.22,c:30000},{r:4.62,c:22000},{r:6.07,c:16480},{r:7.65,c:12650},{r:9.34,c:10000},{r:11.13,c:8100},{r:13.03,c:6730},{r:15.03,c:5690},{r:17.12,c:4920},{r:19.26,c:4320},{r:21.5,c:3860},{r:24.3,c:1800},{r:25.7,c:1660},{r:27.2,c:1540},{r:28.8,c:1420},{r:30.3,c:1335},{r:32.0,c:1260},{r:33.6,c:1190}],maxReach:33.6,maxCap:30000},
 ];
 
+var TRUCKS = {
+  "X-CLX-044-D3":{pbvLbs:"11000",pbvKg:"4989.6",delLbs:"4000",delKg:"1814.4",traLbs:"7000",traKg:"3175.2",estab:false},
+  "X-CLX-044-D4":{pbvLbs:"11000",pbvKg:"4989.6",delLbs:"4000",delKg:"1814.4",traLbs:"7000",traKg:"3175.2",estab:false},
+  "X-CLX-058-D3":{pbvLbs:"15000",pbvKg:"6804",delLbs:"5000",delKg:"2268",traLbs:"10000",traKg:"4536",estab:false},
+  "X-CL8-B3":{pbvLbs:"17500",pbvKg:"7938",delLbs:"6500",delKg:"2948.4",traLbs:"11000",traKg:"4989.6",estab:false},
+  "X-CLX-088-E5":{pbvLbs:"17500",pbvKg:"7938",delLbs:"6500",delKg:"2948.4",traLbs:"11000",traKg:"4989.6",estab:false},
+  "X-CL12-B3":{pbvLbs:"25000",pbvKg:"11340",delLbs:"8000",delKg:"3628.8",traLbs:"17000",traKg:"7711.2",estab:false},
+  "X-CLX-148-D2":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CLX-148-D3":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CLX-148-E2":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CLX-148-E3":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CLX-148-E5":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "iX-158-HIDUO-E5":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CL16-B3":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CLX-178-E2":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CLX-178-E3":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "IX-HIDUO-188-E3":{pbvLbs:"35000",pbvKg:"15876",delLbs:"12000",delKg:"5443.2",traLbs:"23000",traKg:"10432.8",estab:false},
+  "X-CL19-B3":{pbvLbs:"52000",pbvKg:"23587.2",delLbs:"12000",delKg:"5443.2",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CLX-218-E3":{pbvLbs:"52000",pbvKg:"23587.2",delLbs:"12000",delKg:"5443.2",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CL23-B3":{pbvLbs:"52000",pbvKg:"23587.2",delLbs:"12000",delKg:"5443.2",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CL23-B4":{pbvLbs:"52000",pbvKg:"23587.2",delLbs:"12000",delKg:"5443.2",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CLX-248-EP3":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CLX-248-EP4":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CLX-288-EP3":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CLX-288-EP4":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:false},
+  "X-CLX-288-EP5":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:false},
+  "eX-302-HIPRO-EP4":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:true},
+  "X-CLX-388-EP4":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:true},
+  "X-CLX-388-EP5":{pbvLbs:"54000",pbvKg:"24494.4",delLbs:"14000",delKg:"6350.4",traLbs:"40000",traKg:"18144",estab:true},
+  "EFFER-395-5S":{pbvLbs:"60000",pbvKg:"27216",delLbs:"20000",delKg:"9072",traLbs:"40000",traKg:"18144",estab:true},
+  "X-CLX-398-EP4":{pbvLbs:"60000",pbvKg:"27216",delLbs:"20000",delKg:"9072",traLbs:"40000",traKg:"18144",estab:true},
+  "X-CLX-398-EP5":{pbvLbs:"60000",pbvKg:"27216",delLbs:"20000",delKg:"9072",traLbs:"40000",traKg:"18144",estab:true},
+  "X-HIPRO-418-EP4":{pbvLbs:"60000",pbvKg:"27216",delLbs:"20000",delKg:"9072",traLbs:"40000",traKg:"18144",estab:true},
+  "X-HIPRO-418-EP5":{pbvLbs:"60000",pbvKg:"27216",delLbs:"20000",delKg:"9072",traLbs:"40000",traKg:"18144",estab:true},
+  "X-HIPRO-558-EP6":{pbvLbs:"60000",pbvKg:"27216",delLbs:"20000",delKg:"9072",traLbs:"40000",traKg:"18144",estab:true},
+  "X-HIPRO-638-E8":{pbvLbs:"66000",pbvKg:"29937.6",delLbs:"20000",delKg:"9072",traLbs:"46000",traKg:"20865.6",estab:true},
+  "X-HIPRO-638-E9":{pbvLbs:"66000",pbvKg:"29937.6",delLbs:"20000",delKg:"9072",traLbs:"46000",traKg:"20865.6",estab:true},
+  "X-HIPRO-658-EP6":{pbvLbs:"66000",pbvKg:"29937.6",delLbs:"20000",delKg:"9072",traLbs:"46000",traKg:"20865.6",estab:true},
+  "X-HIPRO-858-E8":{pbvLbs:"66000",pbvKg:"29937.6",delLbs:"20000",delKg:"9072",traLbs:"46000",traKg:"20865.6",estab:true},
+  "X-HIPRO-1058-E8":{pbvLbs:"86000",pbvKg:"39009.6",delLbs:"20000",delKg:"9072",traLbs:"66,000 2 ejes con tracción traseros mas 1 eje flotante",traKg:"29,938 2 ejes traseros con tracción mas 1 eje flotante",estab:true},
+  "iQ-1188-HiPro-E9":{pbvLbs:"97001",pbvKg:"43999.6536",delLbs:"39,683 (2 ejes)",delKg:"18,000 (2 ejes)",traLbs:"57,320 (2 ejes)",traKg:"26,000 (2 ejes)",estab:true},
+  "iQ-1188-HiPro-E9-JIB":{pbvLbs:"97001",pbvKg:"43999.6536",delLbs:"39,683 (2 ejes)",delKg:"18,000 (2 ejes)",traLbs:"57,320 (2 ejes)",traKg:"26,000 (2 ejes)",estab:true},
+  "iQ-1388-HiPro-E9":{pbvLbs:"97001",pbvKg:"43999.6536",delLbs:"39,683 (2 ejes)",delKg:"18,000 (2 ejes)",traLbs:"57,320 (2 ejes)",traKg:"26,000 (2 ejes)",estab:true},
+};
+
+var MODEL_FEATURES = {
+  "IX-HIDUO-188-E3":  ["Control CombiDrive4","Enfriador","Sistema Space EVO"],
+  "X-CL12-B3":        ["Tanque integrado 50L"],
+  "X-CL16-B3":        ["Una unidad montada en Foton S12"],
+  "X-CL23-B3":        ["Tanque integrado 85L"],
+  "X-CL8-B3":         ["Tanque integrado 50L"],
+  "X-CLX-044-D4":     ["Tanque 65L"],
+  "X-CLX-088-E5":     ["Enfriador"],
+  "X-CLX-148-D2":     ["Tanque 100L"],
+  "X-CLX-148-D3":     ["Tanque 100L","Una unidad montada en Freightliner M2 52K"],
+  "X-CLX-148-E2":     ["Color Blanco","Tanque 100L"],
+  "X-CLX-178-E2":     ["Tanque 150L","Preparada para extensión adicional"],
+  "X-CLX-178-E3":     ["Tanque 150L","Algunas unidades con 5ª y 6ª función hidráulica"],
+  "X-CLX-248-EP3":    ["Tanque 150L"],
+  "X-CLX-248-EP4":    ["Tanque 150L"],
+  "X-CLX-288-EP3":    ["Tanque 150L","Una unidad con 5ª y 6ª función hidráulica"],
+  "X-CLX-288-EP4":    ["Tanque 150L"],
+  "X-CLX-288-EP5":    ["Tanque 150L"],
+  "X-CLX-388-EP4":    ["Tanque 200L","Control remoto","Enfriador","Gatos auxiliares"],
+  "X-CLX-388-EP5":    ["Tanque 200L","Control remoto","Enfriador","Gatos auxiliares"],
+  "X-CLX-398-EP4":    ["Tanque 200L","Control remoto","Enfriador","Gatos auxiliares"],
+  "X-CLX-398-EP5":    ["Tanque 200L","Control remoto","Gatos auxiliares"],
+  "X-HIPRO-1058-E8":  ["Tanque 250–300L","Enfriador","Gatos auxiliares","Control remoto"],
+  "X-HIPRO-558-EP6":  ["Control XS Drive","Six levers","Enfriador","Sistema Space EVO","Estabilizadores auxiliares (7.1–8 m)"],
+  "X-HIPRO-858-E8":   ["Control XS Drive","Enfriador","Estabilizadores auxiliares (7–8.1 m)"],
+  "eX-302-HIPRO-EP4": ["Enfriador","Gatos auxiliares","Sistema Space EVO","Control remoto"],
+  "iQ-1388-HiPro-E9": ["Enfriador","Filtro de alta presión","Gatos auxiliares","Jib 260Q (30 tm)","SAF","VSL"],
+};
+
 var INV = {
-  "X-CLX-044-D3":    {u:{TEXCOCO:2},fab:0},
-  "X-CLX-044-D4":    {u:{TEXCOCO:3},fab:0},
-  "X-CLX-058-D3":    {u:{TEXCOCO:4,VILLAHERMOSA:1,MERIDA:1},fab:0},
-  "X-CL8-B3":        {u:{GUADALAJARA:1,MERIDA:1},fab:4,fd:"9 Jul"},
-  "X-CLX-088-E5":    {u:{TEXCOCO:2},fab:0},
-  "X-CL12-B3":       {u:{GUADALAJARA:1,TEXCOCO:4},fab:0},
-  "X-CLX-148-D2":    {u:{MONTERREY:1,TEXCOCO:12},fab:0,n:"Una unidad en Monterrey con recall pendiente (cambio de brazo)"},
-  "X-CLX-148-E2":    {u:{HERMOSILLO:2},fab:0,n:"Color blanco"},
-  "X-CLX-148-D3":    {u:{MONTERREY:1,GUADALAJARA:2,VILLAHERMOSA:1,MERIDA:1,TEXCOCO:6},fab:0,n:"Una unidad en Guadalajara montada en camión — no disponible sola"},
-  "X-CLX-148-E3":    {u:{},fab:0},
-  "X-CLX-148-E5":    {u:{},fab:0},
-  "iX-158-HIDUO-E5": {u:{},fab:0},
-  "X-CL16-B3":       {u:{GUADALAJARA:1,MERIDA:1,TEXCOCO:3},fab:0,n:"Una unidad en rehabilitación (Texcoco). Una montada en Foton — no disponible sola."},
-  "X-CLX-178-E2":    {u:{},fab:4,fd:"22 Jun",n:"Todas las unidades actuales vendidas. Próximas en Junio."},
-  "X-CLX-178-E3":    {u:{GUADALAJARA:1,TEXCOCO:4},fab:2,fd:"22 Jun"},
-  "IX-HIDUO-188-E3": {u:{TEXCOCO:2},fab:0},
-  "X-CL19-B3":       {u:{MONTERREY:1,TEXCOCO:2},fab:0},
-  "X-CLX-218-E3":    {u:{},fab:0},
-  "X-CL23-B3":       {u:{VILLAHERMOSA:1,TEXCOCO:4},fab:0},
-  "X-CL23-B4":       {u:{GUADALAJARA:1,MONTERREY:1,VILLAHERMOSA:1,MERIDA:1,TEXCOCO:1},fab:0},
-  "X-CLX-248-EP3":   {u:{TEXCOCO:2},fab:0},
-  "X-CLX-248-EP4":   {u:{MONTERREY:1,TEXCOCO:3},fab:0},
-  "X-CLX-288-EP3":   {u:{TEXCOCO:1,HERMOSILLO:1},fab:0},
-  "X-CLX-288-EP4":   {u:{},fab:0},
-  "X-CLX-288-EP5":   {u:{TEXCOCO:2},fab:0},
-  "eX-302-HIPRO-EP4":{u:{TEXCOCO:2},fab:0},
-  "X-CLX-388-EP4":   {u:{VILLAHERMOSA:1,GUADALAJARA:1,TEXCOCO:1},fab:0},
-  "X-CLX-388-EP5":   {u:{GUADALAJARA:1,TEXCOCO:2},fab:0},
-  "EFFER-395-5S":    {u:{},fab:0,n:"Unidad en rehabilitación — consultar con taller"},
-  "X-CLX-398-EP4":   {u:{},fab:0,n:"Única unidad RESERVADA — verificar disponibilidad"},
-  "X-CLX-398-EP5":   {u:{VILLAHERMOSA:1},fab:0},
-  "X-HIPRO-418-EP4": {u:{},fab:0},
-  "X-HIPRO-418-EP5": {u:{},fab:0},
-  "X-HIPRO-558-EP6": {u:{},fab:2,fd:"10 Ago"},
-  "X-HIPRO-638-E8":  {u:{},fab:0},
-  "X-HIPRO-638-E9":  {u:{},fab:0},
-  "X-HIPRO-658-EP6": {u:{},fab:2,fd:"18 Jul"},
-  "X-HIPRO-858-E8":  {u:{},fab:2,fd:"19 Oct"},
-  "X-HIPRO-1058-E8": {u:{TEXCOCO:1,VILLAHERMOSA:1},fab:0},
-  "iQ-1188-HiPro-E9":{u:{},fab:0},
-  "iQ-1388-HiPro-E9":{u:{TEXCOCO:1},fab:0,n:"Incluye Jib 260Q · 30 tm"}
+  "X-CLX-044-D3":        {u:{"TEXCOCO":2},fab:0,fd:null,n:null},
+  "X-CLX-044-D4":        {u:{"TEXCOCO":3},fab:0,fd:null,n:null},
+  "X-CLX-058-D3":        {u:{},fab:0,fd:null,n:"Todas las unidades reservadas — verificar disponibilidad"},
+  "X-CL8-B3":            {u:{"GUADALAJARA":1,"MERIDA":1},fab:4,fd:"9 JULIO",n:null},
+  "X-CLX-088-E5":        {u:{"TEXCOCO":2},fab:0,fd:null,n:null},
+  "X-CL12-B3":           {u:{"GUADALAJARA":1,"TEXCOCO":4},fab:0,fd:null,n:null},
+  "X-CLX-148-D2":        {u:{"MONTERREY":1,"TEXCOCO":12},fab:0,fd:null,n:"Una unidad en Monterrey con recall pendiente (cambio de brazo)"},
+  "X-CLX-148-D3":        {u:{"MONTERREY":1,"VILLAHERMOSA":1,"GUADALAJARA":1,"MERIDA":1,"TEXCOCO":6},fab:0,fd:null,n:"Una unidad montada en camión — no disponible sola"},
+  "X-CLX-148-E2":        {u:{"HERMOSILLO":2},fab:0,fd:null,n:null},
+  "X-CLX-148-E3":        {u:{},fab:0,fd:null,n:null},
+  "X-CLX-148-E5":        {u:{},fab:0,fd:null,n:null},
+  "iX-158-HIDUO-E5":     {u:{},fab:0,fd:null,n:null},
+  "X-CL16-B3":           {u:{"GUADALAJARA":1,"MERIDA":1,"TEXCOCO":3},fab:0,fd:null,n:"Una unidad montada en Foton — no disponible sola"},
+  "X-CLX-178-E2":        {u:{},fab:4,fd:"22 JUNIO",n:"Todas las unidades actuales vendidas. Próximas en Junio."},
+  "X-CLX-178-E3":        {u:{"GUADALAJARA":1,"TEXCOCO":4},fab:2,fd:"22 JUNIO",n:null},
+  "IX-HIDUO-188-E3":     {u:{"TEXCOCO":2},fab:0,fd:null,n:null},
+  "X-CL19-B3":           {u:{"MONTERREY":1,"TEXCOCO":2},fab:4,fd:"PENDIENTE",n:null},
+  "X-CLX-218-E3":        {u:{},fab:0,fd:null,n:null},
+  "X-CL23-B3":           {u:{"VILLAHERMOSA":1,"TEXCOCO":4},fab:0,fd:null,n:null},
+  "X-CL23-B4":           {u:{"GUADALAJARA":1,"MONTERREY":1,"VILLAHERMOSA":1,"MERIDA":1,"TEXCOCO":1},fab:0,fd:null,n:null},
+  "X-CLX-248-EP3":       {u:{"TEXCOCO":2},fab:0,fd:null,n:null},
+  "X-CLX-248-EP4":       {u:{"MONTERREY":1,"TEXCOCO":3},fab:0,fd:null,n:null},
+  "X-CLX-288-EP3":       {u:{"TEXCOCO":1,"HERMOSILLO":1},fab:5,fd:"PENDIENTE",n:null},
+  "X-CLX-288-EP4":       {u:{},fab:3,fd:"PENDIENTE",n:null},
+  "X-CLX-288-EP5":       {u:{"TEXCOCO":1},fab:0,fd:null,n:null},
+  "eX-302-HIPRO-EP4":    {u:{"TEXCOCO":2},fab:0,fd:null,n:null},
+  "X-CLX-388-EP4":       {u:{"VILLAHERMOSA":1,"GUADALAJARA":1,"TEXCOCO":1},fab:0,fd:null,n:"Incluye control remoto, gatos y enfriador"},
+  "X-CLX-388-EP5":       {u:{"GUADALAJARA":1,"TEXCOCO":2},fab:0,fd:null,n:null},
+  "EFFER-395-5S":        {u:{},fab:0,fd:null,n:"En rehabilitación — consultar disponibilidad con taller"},
+  "X-CLX-398-EP4":       {u:{},fab:4,fd:"PENDIENTE",n:null},
+  "X-CLX-398-EP5":       {u:{"VILLAHERMOSA":1},fab:4,fd:"PENDIENTE",n:null},
+  "X-HIPRO-418-EP4":     {u:{},fab:0,fd:null,n:null},
+  "X-HIPRO-418-EP5":     {u:{},fab:0,fd:null,n:null},
+  "X-HIPRO-558-EP6":     {u:{},fab:2,fd:"10 AGOSTO",n:null},
+  "X-HIPRO-638-E8":      {u:{},fab:0,fd:null,n:null},
+  "X-HIPRO-638-E9":      {u:{},fab:0,fd:null,n:null},
+  "X-HIPRO-658-EP6":     {u:{},fab:2,fd:"18 JULIO",n:null},
+  "X-HIPRO-858-E8":      {u:{},fab:2,fd:"19 OCTUBRE",n:null},
+  "X-HIPRO-1058-E8":     {u:{"TEXCOCO":1,"VILLAHERMOSA":1},fab:0,fd:null,n:null},
+  "iQ-1188-HiPro-E9":    {u:{},fab:0,fd:null,n:null},
+  "iQ-1188-HiPro-E9-JIB":{u:{},fab:0,fd:null,n:"Misma unidad que iQ-1188 E-9 con Jib instalado — consultar disponibilidad"},
+  "iQ-1388-HiPro-E9":    {u:{"TEXCOCO":1},fab:0,fd:null,n:null}
 };
 
 // ── HELPERS ───────────────────────────────────────────────────
@@ -507,9 +633,34 @@ function renderCard(crane, badge, isOpen, weight, reach) {
     + '<div class="specs-grid">'
     + '<div class="spec hi"><div class="spec-label">Capacidad a ' + reach + ' m</div><div class="spec-val">' + fmt(cap) + '<span class="spec-unit"> kg</span></div></div>'
     + '<div class="spec"><div class="spec-label">Alcance máximo</div><div class="spec-val">' + crane.maxReach + '<span class="spec-unit"> m</span></div></div>'
-    + '<div class="spec"><div class="spec-label">Capacidad máxima</div><div class="spec-val">' + fmt(crane.maxCap) + '<span class="spec-unit"> kg</span></div></div>'
+    + '<div class="spec"><div class="spec-label">Capacidad máxima</div><div class="spec-val">' + fmt(crane.maxCap) + '<span class="spec-unit"> kg</span> <span style="font-size:14px;font-weight:500;color:var(--gray-600);">a ' + crane.chart[0].r + ' m</span></div></div>'
     + '</div>'
     + checks
+    + (function(){
+        var feats = MODEL_FEATURES[crane.id] || [];
+        if (!feats.length) return '';
+        return '<hr class="sep"><div style="margin-bottom:1.25rem;">'
+          + '<div class="sec-label">Equipamiento destacado</div>'
+          + '<div style="display:flex;flex-wrap:wrap;gap:6px;">'
+          + feats.map(function(f){ return '<span style="font-size:12px;font-weight:500;background:var(--gray-100);border:1px solid var(--gray-200);border-radius:2px;padding:4px 10px;color:var(--gray-600);">&#10003; ' + f + '</span>'; }).join('')
+          + '</div></div>';
+      })()
+    + (function(){
+        var t = TRUCKS[crane.id];
+        if (!t) return '<hr class="sep">';
+        var estabHtml = t.estab
+          ? '<div class="truck-estab">⚠ Estabilizadores auxiliares requeridos</div>'
+          : '';
+        return '<hr class="sep"><div class="truck-section">'
+          + '<div class="sec-label">Camión requerido para montaje</div>'
+          + '<div class="truck-grid">'
+          + '<div class="truck-cell"><div class="truck-cell-label">PBV mínimo</div><div class="truck-cell-val">' + Number(t.pbvLbs.replace(/,/g,'')).toLocaleString('es-MX') + ' lbs</div><div class="truck-cell-sub">' + Number(parseFloat(t.pbvKg)).toLocaleString('es-MX') + ' kg</div></div>'
+          + '<div class="truck-cell"><div class="truck-cell-label">Eje delantero</div><div class="truck-cell-val">' + t.delLbs + ' lbs</div><div class="truck-cell-sub">' + t.delKg + ' kg</div></div>'
+          + '<div class="truck-cell"><div class="truck-cell-label">Eje trasero</div><div class="truck-cell-val">' + t.traLbs + ' lbs</div><div class="truck-cell-sub">' + t.traKg + ' kg</div></div>'
+          + '</div>'
+          + estabHtml
+          + '</div>';
+      })()
     + '<hr class="sep">'
     + '<div class="avail-section"><div class="sec-label">Disponibilidad en inventario</div>' + avail + '</div>'
     + '<hr class="sep">'
@@ -529,11 +680,14 @@ function loadMedia(crane) {
     var url = charts[crane.id];
     if (url) {
       var img = document.createElement("img");
-      img.style.cssText = "max-width:100%;max-height:340px;object-fit:contain;display:block;";
+      img.style.cssText = "max-width:100%;max-height:340px;object-fit:contain;display:block;cursor:zoom-in;";
       img.alt = "Tabla de carga " + crane.name;
       img.onerror = function() {
-        wrap.innerHTML = '<div class="chart-msg">No se pudo cargar la imagen.<br><small>Verifica que el archivo esté compartido públicamente.</small></div>';
+        wrap.innerHTML = '<div class="chart-msg">No se pudo cargar la imagen.</div>';
       };
+      img.onclick = (function(u, n) {
+        return function() { openLightbox([u], 0, n + ' — Tabla de carga'); };
+      })(url, crane.name);
       img.src = url;
       wrap.innerHTML = "";
       wrap.appendChild(img);
@@ -541,6 +695,8 @@ function loadMedia(crane) {
       wrap.innerHTML = '<div class="chart-msg">Archivo no encontrado: <code>' + crane.id + '.jpg</code></div>';
     }
   });
+
+
 
   // Fotos
   getPhotos(crane.id).then(function(photos) {
@@ -552,8 +708,11 @@ function loadMedia(crane) {
     }
     var cls = photos.length === 1 ? "c1" : photos.length === 2 ? "c2" : "c3";
     var html = '<div class="photo-grid ' + cls + '">';
-    photos.forEach(function(url) {
-      html += '<div class="photo-item"><img src="' + url + '" alt="' + crane.name + '" style="width:100%;height:100%;object-fit:cover;display:block;" onerror="this.parentElement.style.display=\'none\'"></div>';
+    window['lbPhotos_' + crane.id.replace(/-/g,'_')] = photos.slice();
+    var allPhotos = photos.slice();
+    photos.forEach(function(url, idx) {
+      var onclick = 'openLightbox(allPhotos,' + idx + ',\'' + crane.name + '\')';
+      html += '<div class="photo-item"><img src="' + url + '" alt="' + crane.name + '" style="width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in;" onerror="this.parentElement.style.display=\'none\'" onclick="openLightbox(lbPhotos_' + crane.id.replace(/-/g,'_') + ',' + idx + ',\'' + crane.name + '\')" ></div>';
     });
     html += '</div>';
     wrap.innerHTML = html;
@@ -569,14 +728,30 @@ function buscar() {
   if (!weight || weight <= 0) { alert("Ingresa el peso a cargar."); return; }
   if (!reach  || reach  <= 0) { alert("Ingresa el alcance horizontal."); return; }
 
+  // Advertencia zona peligrosa < 3m
+  if (reach < 3) {
+    var continuar = confirm(
+      "⚠️ ADVERTENCIA DE SEGURIDAD\n\n" +
+      "Un alcance de " + reach + " m está dentro de la zona de riesgo (menos de 3 m).\n\n" +
+      "A esta distancia, la carga podría colisionar con la estructura de la grúa, " +
+      "la cabina del camión o la carrocería, representando un riesgo para personas y equipos.\n\n" +
+      "Se recomienda consultar con el área técnica antes de operar en esta configuración.\n\n" +
+      "¿Deseas continuar de todas formas?"
+    );
+    if (!continuar) return;
+  }
+
   showScreen("screenResults");
 
   var cargoHtml = cargo ? '<span class="query-sep">·</span><span class="query-cargo">' + cargo + '</span>' : '';
   document.getElementById("queryLine").innerHTML =
+    '<div style="font-size:12px;font-weight:600;color:var(--gray-400);letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;">Tu búsqueda:</div>' +
+    '<div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">' +
     '<span class="query-val"><strong>' + fmt(weight) + '</strong> kg</span>' +
     '<span class="query-sep">a</span>' +
     '<span class="query-val"><strong>' + reach + '</strong> m</span>' +
-    cargoHtml;
+    cargoHtml +
+    '</div>';
 
   var selected = selectThree(weight, reach);
   var container = document.getElementById("resultsContainer");
@@ -604,8 +779,8 @@ function buscar() {
 // ── CREDENCIALES ─────────────────────────────────────────────
 // Puedes agregar más usuarios en este objeto
 var USERS = {
-  "alex":   "cargotecnia2024",
-  "andres": "cargotecnia2024"
+  "alex":   "cargo2024",
+  "andres": "cargo2024"
 };
 
 function doLogin() {
@@ -633,6 +808,62 @@ function doLogin() {
     document.getElementById("loginOverlay").style.display = "none";
   }
 })();
+
+
+// ── LIGHTBOX ─────────────────────────────────────────────────
+var _lbImages = [];
+var _lbIndex  = 0;
+var _lbCaption = '';
+
+function openLightbox(imgs, startIndex, caption) {
+  _lbImages  = Array.isArray(imgs) ? imgs : [imgs];
+  _lbIndex   = startIndex || 0;
+  _lbCaption = caption || '';
+  lbShow();
+  document.getElementById('lightbox').classList.add('active');
+  document.addEventListener('keydown', lbKey);
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.removeEventListener('keydown', lbKey);
+  _lbImages = [];
+}
+
+function lbClose(e) {
+  if (e.target.id === 'lightbox') closeLightbox();
+}
+
+function lbKey(e) {
+  if (e.key === 'ArrowRight') lbNav(1);
+  if (e.key === 'ArrowLeft')  lbNav(-1);
+  if (e.key === 'Escape')     closeLightbox();
+}
+
+function lbNav(dir) {
+  if (_lbImages.length <= 1) return;
+  _lbIndex = (_lbIndex + dir + _lbImages.length) % _lbImages.length;
+  lbShow();
+}
+
+function lbShow() {
+  var img = document.getElementById('lightbox-img');
+  var counter = document.getElementById('lightbox-counter');
+  var caption = document.getElementById('lightbox-caption');
+  var prev = document.getElementById('lightbox-prev');
+  var next = document.getElementById('lightbox-next');
+  img.src = _lbImages[_lbIndex];
+  caption.textContent = _lbCaption;
+  if (_lbImages.length > 1) {
+    counter.textContent = (_lbIndex + 1) + ' / ' + _lbImages.length;
+    prev.style.display = 'block';
+    next.style.display = 'block';
+  } else {
+    counter.textContent = '';
+    prev.style.display = 'none';
+    next.style.display = 'none';
+  }
+}
 
 </script>
 </body>
