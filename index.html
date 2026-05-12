@@ -874,6 +874,27 @@ function loadMedia(crane) {
 }
 
 // ── BÚSQUEDA PRINCIPAL ────────────────────────────────────────
+function loadInventory(callback) {
+  fetch(SCRIPT + "?type=inventory")
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      // Merge live inventory into INV — keep structure, update values
+      Object.keys(data).forEach(function(mid) {
+        INV[mid] = data[mid];
+      });
+      // Update badge date
+      var badge = document.getElementById('invBadge');
+      if (badge) badge.textContent = 'Inventario actualizado · en línea';
+      if (callback) callback();
+    })
+    .catch(function(){
+      // On error, use static INV already in HTML
+      var badge = document.getElementById('invBadge');
+      if (badge) badge.textContent = 'Inventario Semana 20 · 11 May 2026 (sin conexión)';
+      if (callback) callback();
+    });
+}
+
 function buscar() {
   var weight = parseFloat(document.getElementById("inWeight").value);
   var reach  = parseFloat(document.getElementById("inReach").value);
