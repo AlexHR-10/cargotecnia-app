@@ -721,7 +721,7 @@ function showScreen(id) {
   document.getElementById(id).classList.add("active");
   window.scrollTo({top:0, behavior:"smooth"});
 }
-function goHome() { showScreen("screenHome"); }
+function goHome() { showScreen("screenHome"); loadInventory(null); }
 function toggleCard(id) { document.getElementById("card-"+id).classList.toggle("open"); }
 
 // ── ICONOS ────────────────────────────────────────────────────
@@ -875,7 +875,7 @@ function loadMedia(crane) {
 
 // ── BÚSQUEDA PRINCIPAL ────────────────────────────────────────
 function loadInventory(callback) {
-  fetch(SCRIPT + "?type=inventory&t=" + new Date().getTime())
+  fetch(SCRIPT + "?type=inventory&t=" + new Date().getTime(), {cache: "no-store"})
     .then(function(r){ return r.json(); })
     .then(function(data){
       if (data && !data.error && Object.keys(data).length > 0) {
