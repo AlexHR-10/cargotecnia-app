@@ -900,9 +900,7 @@ function loadInventory(callback) {
     });
 }
 
-function buscar() { _buscar(); }
-
-function _buscar() {
+function buscar() {
   var weight = parseFloat(document.getElementById("inWeight").value);
   var reach  = parseFloat(document.getElementById("inReach").value);
   var cargo  = document.getElementById("inCargo").value.trim();
@@ -1102,9 +1100,7 @@ function getFamilyKey(id) {
   return 'Otros';
 }
 
-function openCatalog() { _openCatalog(); }
-
-function _openCatalog() {
+function openCatalog() {
   // Build family cards
   var grid = document.getElementById('familyGrid');
   var familyCranes = {};
