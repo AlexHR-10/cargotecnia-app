@@ -270,7 +270,7 @@ main{max-width:840px;margin:0 auto;padding:1rem 1.5rem 3rem;}
 <!-- PANTALLA FAMILIAS -->
 <div id="screenFamilies" class="screen">
   <div class="catalog-header">
-    <button class="btn-back" onclick="showScreen('screenHome')">
+    <button class="btn-back" onclick="showScreenFresh('screenHome')">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
       Inicio
     </button>
@@ -283,7 +283,7 @@ main{max-width:840px;margin:0 auto;padding:1rem 1.5rem 3rem;}
 <!-- PANTALLA MODELOS DE FAMILIA -->
 <div id="screenModels" class="screen">
   <div class="catalog-header">
-    <button class="btn-back" onclick="showScreen('screenFamilies')">
+    <button class="btn-back" onclick="showScreenFresh('screenFamilies')">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
       Familias
     </button>
@@ -721,7 +721,7 @@ function showScreen(id) {
   document.getElementById(id).classList.add("active");
   window.scrollTo({top:0, behavior:"smooth"});
 }
-function goHome() { showScreen("screenHome"); loadInventory(null); }
+function goHome() { showScreenFresh("screenHome"); }
 function toggleCard(id) { document.getElementById("card-"+id).classList.toggle("open"); }
 
 // ── ICONOS ────────────────────────────────────────────────────
@@ -920,7 +920,7 @@ function buscar() {
     if (!continuar) return;
   }
 
-  showScreen("screenResults");
+  showScreenFresh("screenResults");
 
   var cargoHtml = cargo ? '<span class="query-sep">·</span><span class="query-cargo">' + cargo + '</span>' : '';
   document.getElementById("queryLine").innerHTML =
@@ -1118,7 +1118,7 @@ function openCatalog() {
       + '</div>';
   }).join('');
 
-  showScreen('screenFamilies');
+  showScreenFresh('screenFamilies');
 }
 
 function openFamily(familyKey) {
