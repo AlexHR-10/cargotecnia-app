@@ -901,7 +901,10 @@ function loadInventory(callback) {
 }
 
 function buscar() {
-  loadInventory(function() { _buscar(); });
+  _buscar();                    // Mostrar resultados inmediatamente
+  loadInventory(function() {   // Actualizar inventario en segundo plano
+    _buscar();                  // Re-renderizar con datos frescos
+  });
 }
 
 function _buscar() {
@@ -1105,7 +1108,12 @@ function getFamilyKey(id) {
 }
 
 function openCatalog() {
-  loadInventory(function() { _openCatalog(); });
+  _openCatalog();               // Mostrar catálogo inmediatamente
+  loadInventory(function() {   // Actualizar inventario en segundo plano
+    // Si el catálogo está abierto, refrescar silenciosamente
+    var active = document.getElementById('screenFamilies');
+    if (active && active.classList.contains('active')) _openCatalog();
+  });
 }
 
 function _openCatalog() {
