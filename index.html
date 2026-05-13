@@ -900,12 +900,7 @@ function loadInventory(callback) {
     });
 }
 
-function buscar() {
-  _buscar();                    // Mostrar resultados inmediatamente
-  loadInventory(function() {   // Actualizar inventario en segundo plano
-    _buscar();                  // Re-renderizar con datos frescos
-  });
-}
+function buscar() { _buscar(); }
 
 function _buscar() {
   var weight = parseFloat(document.getElementById("inWeight").value);
@@ -1107,14 +1102,7 @@ function getFamilyKey(id) {
   return 'Otros';
 }
 
-function openCatalog() {
-  _openCatalog();               // Mostrar catálogo inmediatamente
-  loadInventory(function() {   // Actualizar inventario en segundo plano
-    // Si el catálogo está abierto, refrescar silenciosamente
-    var active = document.getElementById('screenFamilies');
-    if (active && active.classList.contains('active')) _openCatalog();
-  });
-}
+function openCatalog() { _openCatalog(); }
 
 function _openCatalog() {
   // Build family cards
