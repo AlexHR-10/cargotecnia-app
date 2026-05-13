@@ -875,7 +875,7 @@ function loadMedia(crane) {
 
 // ── BÚSQUEDA PRINCIPAL ────────────────────────────────────────
 function loadInventory(callback) {
-  fetch(SCRIPT + "?type=inventory")
+  fetch(SCRIPT + "?type=inventory&t=" + new Date().getTime())
     .then(function(r){ return r.json(); })
     .then(function(data){
       // Merge live inventory into INV — keep structure, update values
