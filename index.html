@@ -878,17 +878,21 @@ function loadInventory(callback) {
   fetch(SCRIPT + "?type=inventory&t=" + new Date().getTime())
     .then(function(r){ return r.json(); })
     .then(function(data){
-      // Merge live inventory into INV — keep structure, update values
-      Object.keys(data).forEach(function(mid) {
-        INV[mid] = data[mid];
-      });
-      // Update badge date
-      var badge = document.getElementById('invBadge');
-      if (badge) badge.textContent = 'Inventario actualizado · en línea';
+      if (data && !data.error && Object.keys(data).length > 0) {
+        // Reset ALL models to sin stock first
+        Object.keys(INV).forEach(function(mid) {
+          INV[mid] = {u:{}, fab:0, fd:null, rehab:0, n:INV[mid].n || null};
+        });
+        // Then apply live data
+        Object.keys(data).forEach(function(mid) {
+          INV[mid] = data[mid];
+        });
+        var badge = document.getElementById('invBadge');
+        if (badge) badge.textContent = 'Inventario actualizado · en línea';
+      }
       if (callback) callback();
     })
     .catch(function(){
-      // On error, use static INV already in HTML
       var badge = document.getElementById('invBadge');
       if (badge) badge.textContent = 'Inventario Semana 20 · 11 May 2026 (sin conexión)';
       if (callback) callback();
