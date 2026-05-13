@@ -721,6 +721,10 @@ function showScreen(id) {
   document.getElementById(id).classList.add("active");
   window.scrollTo({top:0, behavior:"smooth"});
 }
+
+function showScreenFresh(id) {
+  loadInventory(function() { showScreen(id); });
+}
 function goHome() { showScreenFresh("screenHome"); }
 function toggleCard(id) { document.getElementById("card-"+id).classList.toggle("open"); }
 
