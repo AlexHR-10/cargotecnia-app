@@ -358,7 +358,7 @@ main{max-width:840px;margin:0 auto;padding:1rem 1.5rem 3rem;}
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
           Nueva consulta
         </button>
-        <div class="inv-badge"><span class="inv-dot"></span>Inventario Semana 19 · 4 May 2026</div>
+        <div class="inv-badge"><span class="inv-dot"></span><span id="invBadge">Inventario Semana 20 · 11 May 2026</span></div>
       </div>
     </div>
   </div>
@@ -968,6 +968,7 @@ function doLogin() {
     sessionStorage.setItem("cgt_auth", expires);
     document.getElementById("loginOverlay").style.display = "none";
     errEl.style.display = "none";
+    loadInventory(null);
   } else {
     errEl.style.display = "block";
     document.getElementById("loginPass").value = "";
@@ -980,6 +981,7 @@ function doLogin() {
   var auth = sessionStorage.getItem("cgt_auth");
   if (auth && new Date().getTime() < parseInt(auth)) {
     document.getElementById("loginOverlay").style.display = "none";
+    loadInventory(null);
   }
 })();
 
